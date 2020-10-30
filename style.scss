@@ -1,0 +1,75 @@
+@import "./_variables.scss";
+
+html,
+.body {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  justify-content: space-between;
+  //border: 5px solid black;
+  height: 50rem;
+  text-align: center;
+  color: black;
+}
+.button {
+  width: 25rem;
+  height: 7rem;
+  background-color: $color-button;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 8px gray;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button1:hover {
+  transform: scaleX(3);
+  background-color: $color-button-secondary;
+}
+.button2 {
+  background-image: url(img/cottoncandytreeskyyes.jpg);
+}
+.button2:hover {
+  border: 7px solid $color-special-border;
+  color: darkgreen;
+  filter: grayscale(65%);
+}
+.button3 {
+  color: transparent;
+}
+.button3:hover {
+  color: black;
+  transition: 0.75s;
+  transform: skewY(-12deg);
+}
+.button4:hover {
+  transform: rotateX(180deg);
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 5% 51%, 0% 0%);
+}
+.buttonfive:hover {
+  background-color: red;
+  transform: scale(3, 10);
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  font-size: 0.5rem;
+}
